@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechatronic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/smallLogo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- start [NAV] -->
+    <nav id="navo">
+        <div class="container">
+
+            <div class="right">
+
+                <div class="menu" id="menuBtn">
+                    <div class="up"></div>
+                    <div class="middle"></div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="text-right">
+                    <h2 class="none">قسم ميكاترونيكس</h2>
+                </div>
+            </div>
+            <div class="left hi">
+                <h2>M E C H A T R O N I C S</h2>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="menuList">
+        <div class="container">
+            <a class="lnk" href="#" class="activeA">الرئيسية</a>
+            <a class="lnk" href="./errorPage.html" target="blank">عن القسم</a>
+            <a class="lnk" href="./errorPage.html" target="blank">إدارة القسم</a>
+            <a class="lnk" href="./errorPage.html" target="blank">هيئة التدريس</a>
+            <a class="lnk" href="./errorPage.html" target="blank">الطلاب</a>
+            <a class="lnk" href="#secs">الأقسام</a>
+            <a class="lnk" href="#contact">تواصل معنا</a>
+        </div>
+    </div>
+    <!-- end [NAV] -->
+
+
+
+
+    <!-- start [HOME] -->
+    <section id="home">
+        <div class="container">
+            <div class="top">
+                <div class="right">
+                    <h1>أهلاً و سهلاً بك في موقع</h1>
+                    <h2 class="eng">الهندسه الميكانيكيه</h2>
+                    <h3 class="engg">قسم ميكاترونيكس</h3>
+                    <h3> ميكاترونيكس اولا ...</h3>
+                </div>
+                <div class="left">
+                    <div class="image">
+                        <img src="./csImg.png" id="homeImg">
+                    </div>
+                    <h1 id="homeText">Control Systems</h1>
+                </div>
+            </div>
+            <div class="down">
+                <a href="#news"><i class="fa-solid fa-angles-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- end [HOME] -->
+
+
+
+
+    <!-- start [NEWS] -->
+    <section id="news">
+        <div class="container">
+            <h2 class="main-titlee">latest news</h2>
+            <div class="slider">
+                <div class="right">
+                    <div class="sl" id="0" onclick="changeByTitle(this.id)">أستقبال الطلاب الجدد للعام الجامعي 2022- 2023
+                    </div>
+                    <div class="sl" id="1" onclick="changeByTitle(this.id)">رئيس القسم يفتتح معمل للقسم جديد 
+                    </div>
+                    <div class="sl" id="2" onclick="changeByTitle(this.id)">أنطلاق مارثون line follower ومشاركه طلبه القسم فيه  
+                    </div>
+                    <div class="sl" id="3" onclick="changeByTitle(this.id)">رحلة علمية إلى معرض القاهرة الدولي للتكنولوجيا
+                    </div>
+
+
+                </div>
+                <div class="left">
+                    <div class="scenes">
+
+                        <img src="./aiImg.png" class="logo">
+                        <img src="./leader.jpg" alt="" class="slide" id="slideShow">
+
+                    </div>
+                    <div class="ctrl">
+                        <i class="fa-solid fa-caret-right" id="arrRight"></i>
+                        <div class="circles">
+                            <div class="as"></div>
+                            <div class="as"></div>
+                            <div class="as"></div>
+                            <div class="as"></div>
+                        </div>
+                        <i class="fa-solid fa-caret-left" id="arrLeft"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- for mobile -->
+            <div class="sliderPhone">
+                <div class="main"> <img src="./leader.jpg" alt="">
+                    <div class="text">أستقبال الطلاب الجدد للعام الجامعي 2022- 2023
+                    </div>
+                </div>
+                <div class="ctrlPhone">
+                    <i class="fa-solid fa-caret-right" id="arrRightPhone" onclick="phoneRightArr(this.id)"></i>
+                    <div class="circlesPhone">
+                        <div class="asP" style="opacity: 1;"></div>
+                        <div class="asP"></div>
+                        <div class="asP"></div>
+                        <div class="asP"></div>
+                    </div>
+                    <i class="fa-solid fa-caret-left" id="arrLeftPhone" onclick="phoneLeftArr(this.id)"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end [NEWS] -->
+
+
+
+
+    <!-- start [SECS] -->
+    <section id="secs">
+        <div class="container">
+            <h2 class="main-title">Specialties</h2>
+
+            <div class="boxes">
+
+
+                <!-- CS -->
+                <div class="box boxCs" data-aos="fade-up" data-aos-offset="100" data-aos-duration="600">
+                    <img src="./binary-code.png" class="robot">
+                    <div class="name">
+                        Electronic <br>Control
+                    </div>
+                    <div class="describe">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta repellat exercitationem!
+                    </div>
+                    <a class="btn" href="./errorPage.html" target="blank">
+
+                        <i class="fa-solid fa-arrow-right"></i> EC
+
+                    </a>
+                </div>
+                <!-- IS -->
+                <div class="box boxIs" data-aos="fade-up" data-aos-offset="100" data-aos-duration="600">
+                    <img src="./server.png">
+                    <div class="name">
+                        Control <br> Systems
+                    </div>
+                    <div class="describe">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta repellat exercitationem!
+                    </div>
+                    <a class="btn" href="./errorPage.html" target="blank">
+
+                        <i class="fa-solid fa-arrow-right"></i> CS
+
+                    </a>
+                </div>
+                <!-- BIO -->
+                <div class="box boxBio" data-aos="fade-up" data-aos-offset="100" data-aos-duration="600">
+                    <img src="./data-science.png">
+                    <div class="name">
+                        Electromechanical
+                    </div>
+                    <div class="describe">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta repellat exercitationem!
+                    </div>
+                    <a class="btn" href="./errorPage.html" target="blank">
+
+                        <i class="fa-solid fa-arrow-right"></i> EM
+
+                    </a>
+                </div>
+                <!-- AI -->
+                <div class="box boxAi" data-aos="fade-up" data-aos-offset="100" data-aos-duration="600">
+                    <img src="./artificial-intelligence.png">
+                    <div class="name">
+                        Artificial<br>Intelligence
+                    </div>
+                    <div class="describe">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta repellat exercitationem!
+                    </div>
+                    <a class="btn" href="./errorPage.html" target="blank">
+
+                        <i class="fa-solid fa-arrow-right"></i> AI
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end [SECS] -->
+
+    <!-- Start Services -->
+    <div class="services" id="services">
+        <h2 class="main-title">Skills</h2>
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-user-shield fa-4x"></i>
+                <h3>Robotics</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-tools fa-4x"></i>
+                <h3>Machines maintenance</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marked-alt fa-4x"></i>
+                <h3>Line Follower</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-laptop-code fa-4x"></i>
+                <h3>Coding</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-palette fa-4x"></i>
+                <h3>Creativity</h3>
+                <div class="info">
+                    <a href="#">Design</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn fa-4x"></i>
+                <h3>Design</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+
+    <!-- Start Events -->
+    <div class="events" id="events">
+        <div class="dots dots-up"></div>
+        <div class="dots dots-down"></div>
+        <h2 class="main-title">Latest Events</h2>
+        <div class="container">
+            <img src="./events.png" alt="" />
+            <div class="info">
+                <div class="time">
+                    <div class="unit">
+                        <span>5</span>
+                        <span>Mounth</span>
+                    </div>
+                    <div class="unit">
+                        <span>08</span>
+                        <span>Days</span>
+                    </div>
+                    <div class="unit">
+                        <span>45</span>
+                        <span>hours</span>
+                    </div>
+                    <div class="unit">
+                        <span>55</span>
+                        <span>miniutes</span>
+                    </div>
+                </div>
+                <h2 class="title">Line Follower Event 2022</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci
+                    quam
+                    ratione aliquam excepturi nulla in harum, veritatis porro
+                </p>
+            </div>
+            <div class="subscribe">
+                <form action="">
+                    <input type="email" placeholder="Enter Your Email" />
+                    <input type="submit" value="Subscribe" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Events -->
+
+    <!-- start [contact] -->
+    <section id="contact">
+        <div class="container">
+            <div class="title">contact us</div>
+            <div class="main">
+
+                <form>
+                    <div class="inputs">
+                        <i class="fa-solid fa-circle-xmark closeQsPop"></i>
+                        <textarea class="qsInpPop" placeholder="إستفسارك .."></textarea>
+                        <input type="text" class="textInp" placeholder="إسمك الأول" required>
+                        <input type="text" class="textInp" placeholder="إسمك الثاني" required>
+                        <input type="email" class="textInp" placeholder="بريدك الإلكتروني" required>
+                        <div class="qsInp">إستفسارك ..</div>
+                    </div>
+                    <button class="animate">إرسال</button>
+                </form>
+                <!-- <img class="pic" src="./email.png"> -->
+            </div>
+        </div>
+    </section>
+    <!-- end [contact] -->
+
+
+
+
+    <!-- start [footer] -->
+    <footer>
+        <div class="contain">
+            <div class="right">
+                <div class="text-right top">
+                    <img class="foot-img" src="./header_robotic.jpg">
+                    <h3 class="foot-txt">قسم ميكاترونيكس</h3>
+                </div>
+                <div class="bottom">يلتزم قسم الهندسه الميكانيكيه  بإعداد خريج متميز قادر<br> 
+                    علي المنافسة و الإبتكار و بإنتاج أبحاث علمية<br> وتطبيقية مبتكرة في مجال الصناعه و الذكاء الإصطناعي
+                </div>
+            </div>
+            <div class="left">
+                <div class="top">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="text">
+                        المنيا <br> بجوار البنك الاهلي المصري
+                    </div>
+                </div>
+                <div class="bottom">
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <div class="nums">
+                        <div>01090596070</div>
+                        <div>01553851665</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end [footer] -->
+
+
+
+    <!-- start [me] -->
+    <div id="me">
+        <a href="https://www.facebook.com/profile.php?id=100013657236896" target="blank"><h>Mohammed Salem</h></a> .... Made with love by
+    </div>
+    <!-- end [me] -->
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
